@@ -1,0 +1,58 @@
+
+
+.branded_text_1 {
+    color:#BC9B5D;
+    font-family:'futura';
+    font-weight: 100;
+}
+
+.branded_text_1_hover {
+    color:#e8b452;
+    font-family:'futura';
+}
+
+.branded-bg-1 {
+    background-color:#D9E1E9;
+}
+
+.branded-bg-1-hover {
+    background-color:#d3dde7;
+}
+
+.svg_logo{
+    font-family: 'Gibson-Bold';
+}
+
+@font-face {
+    font-family: 'Gibson-Bold';
+    src: url('Gibson-Bold.eot');
+    src: url('Gibson-Bold.eot?#iefix') format('embedded-opentype'),
+         url('Gibson-Bold.woff') format('woff'),
+         url('Gibson-Bold.ttf') format('truetype'),
+         url('Gibson-Bold.svg#gibsonregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*
+@font-face {
+    font-family: 'gibson_lightbold';
+    src: url('font/gibson-semibold-webfont.eot');
+    src: url('font/gibson-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/gibson-semibold-webfont.woff') format('woff'),
+         url('font/gibson-semibold-webfont.ttf') format('truetype'),
+         url('font/gibson-semibold-webfont.svg#gibson_lightbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gibson_lightitalic';
+    src: url('font/gibson-light-italic-webfont.eot');
+    src: url('font/gibson-light-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/gibson-light-italic-webfont.woff') format('woff'),
+         url('font/gibson-light-italic-webfont.ttf') format('truetype'),
+         url('font/gibson-light-italic-webfont.svg#gibson_lightitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+} */

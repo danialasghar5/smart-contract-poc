@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @lets_talk_submission %>
+
+<div>
+  <%= link_to "Edit this lets talk submission", edit_lets_talk_submission_path(@lets_talk_submission) %> |
+  <%= link_to "Back to lets talk submissions", lets_talk_submissions_path %>
+
+  <%= button_to "Destroy this lets talk submission", @lets_talk_submission, method: :delete %>
+</div>

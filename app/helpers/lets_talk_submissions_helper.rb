@@ -1,0 +1,2 @@
+module LetsTalkSubmissionsHelper
+end

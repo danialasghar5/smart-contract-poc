@@ -1,0 +1,24 @@
+databases:
+  - name: artcadets-magma-zoom-poc-postgres
+    ipAllowList: []
+
+services:
+  - type: web
+    name: artcadets-magma-zoom-poc-rails
+    plan: starter
+    env: ruby
+    buildCommand: "./bin/render-build.sh"
+    startCommand: bundle exec rails s
+    envVars:
+      - key: RAILS_MASTER_KEY
+        sync: false
+      - key: DATABASE_URL
+        fromDatabase:
+          name: artcadets-magma-zoom-poc-postgres
+          property: connectionString
+
+  - type: redis
+    name: artcadets-magma-zoom-poc-redis
+    ipAllowList: []
+    plan: starter
+    maxmemoryPolicy: noeviction
