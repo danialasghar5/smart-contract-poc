@@ -1,1 +1,33 @@
-smart-contract-poc
+<div class="text-center mt-20 navbar-text">
+    <h1 class="font-bold text-4xl">smart-contract-poc</h1>
+
+    <p class="mt-5">
+        <% if teacher_signed_in? %>
+            Logged in as <strong><%= current_teacher.email %></strong>.
+            <%= link_to "(Logout)", destroy_teacher_session_path, method: :delete, class: "navbar-link", data: { turbo_method: :delete, turbo_confirm: 'Are you sure?' } %>
+        
+            <div class="m-auto w-1/2">
+                <% Course.all.each do |course| %>
+
+                    <div class="border m-10">
+                        <p class="font-bold text-2xl"><%= course.title %></p>
+                        <p class="text-lg"><%= course.desc %></p>
+                        <p class="text-sm italic mb-5"><%= course.start_date %> to <%= course.end_date %></p>
+
+                        <div class="bg-gray-100 p-5">
+                            Enrollment:
+                            <ul>
+                                <% course.enrollments.each do |enrollment| %>
+                                    <li><%= enrollment.student.email %> [completed course]</li>
+                                <% end %>
+                            </ul>    
+                        </div>          
+                    </div>
+                <% end%>
+            </div>
+
+        <% else %>
+            <%= link_to "Login", new_teacher_session_path, class: "navbar-link"  %>
+        <% end %>
+    </p>
+</div>

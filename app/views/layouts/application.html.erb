@@ -12,6 +12,10 @@
   </head>
 
   <body>
-    <%= yield %>
+    <main class="container mx-auto mt-10 px-5 w-full text-center">
+      <p class="notice"><%= notice %></p>
+      <p class="alert"><%= alert %></p>
+      <%= yield %>
+    </main>
   </body>
 </html>

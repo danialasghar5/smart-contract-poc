@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
+  #devise_for :students
+  devise_for :teachers
   namespace :admin do
       resources :courses
+      resources :enrollments
+      resources :completions
 
       root to: "courses#index"
     end
