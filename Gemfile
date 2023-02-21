@@ -74,4 +74,5 @@ group :test do
   gem "webdrivers"
 end
 
-#gem 'zoom-ruby', git: 'https://github.com/nischay-dhiman/zoom-ruby', branch: 'master'
+gem 'devise'
+gem 'administrate'
