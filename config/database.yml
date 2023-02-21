@@ -23,7 +23,7 @@ default: &default
 
 development:
   <<: *default
-  database: artcadets_magma_zoom_poc_development
+  database: smart_contract_poc_development
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -57,7 +57,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: artcadets_magma_zoom_poc_test
+  database: smart_contract_poc_test
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -81,7 +81,7 @@ test:
 #
 production:
   <<: *default
-  database: artcadets_magma_zoom_poc_postgres
-  username: artcadets_magma_zoom_poc_postgres_user
-  password: <%= ENV["ARTCADETS_MAGMA_ZOOM_POC_DATABASE_PASSWORD"] %>
+  database: smart_contract_poc_postgres
+  username: smart_contract_poc_user
+  password: <%= ENV["SMART_CONTRACT_POC_DATABASE_PASSWORD"] %>
   url: <%= ENV.fetch("DATABASE_URL") { "localhost" } %>
