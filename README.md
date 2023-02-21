@@ -17,6 +17,7 @@ What's left to do:
 
 budget: to be discussed
 time frame: one-week
+technology to use: https://dev.to/thesmartnik/how-to-test-solidity-smart-contracts-with-ruby-with-rspec-and-etheriumrb-156
 
 That's it!
 
