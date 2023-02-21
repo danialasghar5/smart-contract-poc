@@ -15,6 +15,9 @@ What's left to do:
 
 2-When course is set to completed, a smart contart will be created and artifacts stored in the database (This is vague because I'm not sure how that works).
 
+budget: to be discussed
+time frame: one-week
+
 That's it!
 
 Please let me know if you have any questions or precisions needed.
