@@ -1,3 +1,5 @@
+********This project is a freelancing work that done related to smart contract implementaation in ruby on rails***********
+
 # Info / Requirements
 
 This is a simple app to create a smart contract everytime a student completes a class.
