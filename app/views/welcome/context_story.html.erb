@@ -1,12 +1,12 @@
 <div class="landing-page text-center">
   <!-- header -->
   <header class="mb-2 bg-dark-blue py-4">
-    <div class="container mx-auto flex items-center justify-center">
+    <div class="container mx-auto flex-items-centered">
       <img src="https://teachandscale.com/wp-content/uploads/2023/04/Teach-And-Scale-Logo-Light.png" alt="" class="tve-not-lazy-loaded" />
     </div>
   </header>
 
-  <div class="container mx-auto flex items-center justify-center py-6 text-center font-literata lg:w-2/3">
+  <div class="container mx-auto flex-items-centered py-6 text-center font-literata lg:w-2/3">
     <div class="flex flex-col items-center">
       <h5 class="p-4 text-4xl font-semibold"><%= t('context.title') %></h5>
       <span class="w-4/5 py-7 tracking-wide text-light-orange"><%= t('context.video_description') %></span>
@@ -15,22 +15,18 @@
         <iframe class="h-full w-full" frameborder="0" loading="lazy" src="https://player.vimeo.com/video/825263174?portrait=0&amp;title=1&amp;color=fff&amp;byline=1&amp;autopause=0" allowfullscreen> </iframe>
       </div>
 
-      <%= link_to 'DOWNLOAD WORKSHEET', download_pdf_path, class: 'tracking-widest text-2xl bg-light-orange text-white font-bold p-4 mx-3 rounded font-muli' %>
+      <%= link_to 'DOWNLOAD WORKSHEET', @download_url, class: 'tracking-widest text-2xl bg-light-orange text-white font-extra-bold p-4 mx-3 rounded font-muli', target: '_blank' %>
 
 
       <div class="py-6 tracking-wider">
         <p>(<a href="#" target="_blank">or click here to make a copy</a>)</p>
       </div>
 
-      <div class="w-full border-t border-black border-opacity-50 mx-2"></div>
+      <div class="border-break-line"></div>
 
       <div class="tracking-wider">
-        <h3 class="font-literata text-3xl font-bold  m-3"><span>Schedule a 15-minute call</span>
-        </h3>
-        <p>
-          <span class="font-muli text-lg"><%= t('context.event_text') %>
-          </span>
-        </p>
+        <h3 class="m-3 font-bold-literata"><span>Schedule a 15-minute call</span></h3>
+        <p><span class="font-muli text-lg"><%= t('context.event_text') %></span></p>
       </div>
 
       <div class="calendly-inline-widget aspect-square w-full p-4">
@@ -38,25 +34,23 @@
         </iframe>
       </div>
 
-      <div class="mx-2 w-full border-t border-black border-opacity-50 py-2"></div>
+      <div class="border-break-line"></div>
 
-        <div class="pb-5 tracking-wider">
-          <h3 class="m-3 font-literata text-3xl font-bold"><span>Attend our next online workshop</span></h3>
-          <p>
-            <span class="font-muli p-7 text-lg"><%= t('context.attend_workshop_text') %></span>
-          </p>
-        </div>
+      <div class="pb-5 tracking-wider">
+        <h3 class="m-3 font-bold-literata"><span>Attend our next online workshop</span></h3>
+        <p><span class="font-muli p-7 text-lg"><%= t('context.attend_workshop_text') %></span></p>
+      </div>
 
-        <a href="https://teachandscale.com/online-workshop" class="bg-light-orange font-muli mx-3 rounded p-4 text-2xl font-bold tracking-widest text-white" target="_blank">
-          <span>LEARN MORE HERE</span>
-        </a>
+      <a href="https://teachandscale.com/online-workshop" class="bg-light-orange font-muli mx-3 rounded p-4 text-2xl font-bold tracking-widest text-white" target="_blank">
+        <span>LEARN MORE HERE</span>
+      </a>
       </div>
     </div>
   </div>
 
   <!-- footer -->
   <footer class="mt-auto bg-dark-blue py-4 font-muli">
-    <div class="text-custom-font-size container mx-auto px-4 text-white sm:px-6 lg:px-8 font-thin font-muli">
+    <div class="container sm:px-6 lg:px-8 text-white mx-auto px-4 font-thin font-muli">
       <div class="flex flex-wrap justify-center space-x-4">
         <%= link_to 'Privacy Policy', "https://teachandscale.com/privacy-policy/" %>
         <%= link_to 'Terms of Service', "https://teachandscale.com/terms/" %>
@@ -66,7 +60,7 @@
       <div class="mx-2 mt-5 font-thin">© <span>2023</span> by Influence&nbsp;<span>And S</span>cale Inc. All Rights Reserved.</div>
       <p class="mt-5 border-b border-white"></p>
 
-      <div class="p-5 text-xs font-thin tracking-wide">
+      <div class="tracking-wide text-xs p-5 font-thin">
         <p class="pb-4"><%= t('footer.social_text') %></p>
         <p><span><%= t('footer.disclaimer_text') %></span></p>
       </div>

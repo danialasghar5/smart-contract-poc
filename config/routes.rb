@@ -13,5 +13,4 @@ Rails.application.routes.draw do
   root to: "welcome#index"
 
   get '/context-story', to: 'welcome#context_story'
-  get '/download_pdf', to: 'pdf#download'
 end

@@ -1,3 +1,18 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Literata&display=swap');
+
+
+.border-break-line {
+  @apply w-full border-t border-black border-opacity-50 mx-2;
+}
+
+.font-bold-literata {
+  @apply text-3xl font-bold font-literata;
+}
+
+.flex-items-centered {
+  @apply flex items-center justify-center;
+}
