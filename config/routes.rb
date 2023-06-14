@@ -11,4 +11,6 @@ Rails.application.routes.draw do
   resources :courses
   resources :lets_talk_submissions
   root to: "welcome#index"
+
+  get '/context-story', to: 'welcome#context_story'
 end

@@ -1,33 +1,11 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t "hello"
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t("hello") %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   "true": "foo"
-#
-# To learn more, please read the Rails Internationalization guide
-# available at https://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  hello: Hello world
+  context:
+    title: Context Story Worksheet
+    video_description: "Watch this video to get the most value out of this resource, then download the Context Story Worksheet below:"
+    event_text: "Want some help to develop your Context Story (or get some feedback to the story you've created)? Use the calendar below to schedule a 15-minute call:"
+    attend_workshop_text: "Want some help to create an online workshop to attract, acquire, or retain more clients for your business? Click on the button below learn more about our next LIVE online workshop."
+
+  footer:
+    social_text: "This site is not a part of the YouTube, Google or Facebook website; Google Inc or Facebook Inc. Additionally, This site is NOT endorsed by YouTube, Google, or Facebook in any way. FACEBOOK is a trademark of FACEBOOK, Inc. YOUTUBE is a trademark of GOOGLE Inc."
+    disclaimer_text: "DISCLAIMER: Any sales figures stated on our website pages or in our trainings are our personal sales figures and in some cases the sales figures of previous or existing clients. Please understand these results are not typical. We're not implying you'll duplicate them (or do anything for that matter). The average person who buys 'how to' information gets little to no results. We're using these references for example purposes only. Your results will vary and depend on many factors including but not limited to your background, experience, and work ethic. All business entails risk as well as massive and consistent effort and action. If you are not willing to accept this, please do not consume our content or purchase our workshops and programs."
